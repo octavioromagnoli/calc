@@ -1,0 +1,41 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+}
+
+.main-container{
+  padding: 7px;
+  background-color: rgb(156, 154, 154);
+}
+.calculator{
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 500px;
+}
+
+.calculator div {
+  flex: auto;
+  display: flex;
+}
+
+.viewScreen{
+  background-color: red;
+}
+
+.Rows{
+  display: flex;
+  flex-direction: column;
+}
+
+.Rows div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
