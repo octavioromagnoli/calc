@@ -65,6 +65,7 @@ buttons.addEventListener("click", (event) => {
 
       }
       else if (!num1 && !num2 && !operator) {
+        if(viewScreen.textContent == ""){break;}
         num1 = viewScreen.textContent;
         operator = target.textContent;
         viewScreen.textContent = "";
@@ -95,11 +96,13 @@ buttons.addEventListener("click", (event) => {
           viewScreen.textContent = "";
           break;
         case "signChange":
+          if(viewScreen.textContent == ""){break;}
           current = viewScreen.textContent;
           current = parseFloat(current) * -1;
           viewScreen.textContent = current;
           break;
         case "percent":
+          if(viewScreen.textContent == ""){break;}
           current = viewScreen.textContent;
           current *= 0.01;
           viewScreen.textContent = current;
